@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/KrunalDarekar/todo-list#readme",
   "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1"
   }
