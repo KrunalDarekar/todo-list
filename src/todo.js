@@ -1,11 +1,9 @@
 const todo = (title, dueDate) => {
-    this.title = title;
-    this.checklist = false;
-    this.dueDate = dueDate;
+    const checklist = false;
 
-    const getTitle = () => this.title;
-    const getCheckList = () => this.checklist;
-    const getDueDate = () => this.dueDate;
+    const getTitle = () => title;
+    const getCheckList = () => checklist;
+    const getDueDate = () => dueDate;
 
     return {getTitle, getCheckList, getDueDate};
 };

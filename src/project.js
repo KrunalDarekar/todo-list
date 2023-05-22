@@ -1,11 +1,16 @@
 const project = (name) => {
-    this.name = name;
-    this.todoList = [];
+    const todoList = [];
 
-    const getName = () => this.name;
-    const addTodo = (todo) => this.todoList.push(todo);
+    const getTodoList = () => todoList;
+    const getName = () => name;
+    const addTodo = (todo) => todoList.push(todo);
 
-    return {getName, addTodo};
+    const getTodo = (index) => {
+        const todo = todoList[index];
+        return todo;
+    }
+
+    return {getName, addTodo, getTodoList, getTodo};
 }
 
 export default project;
