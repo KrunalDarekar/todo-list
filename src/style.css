@@ -33,16 +33,19 @@ footer {
 .sidebar {
     grid-area: sidebar;
     background-color: #F7EFE5;
+    max-width: 20rem;
+    min-width: 10rem;
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 .todoDisplay {
     grid-area: todoDisplay;
     background-color: #FFFBF5;
+    flex-grow: 3;
 }
 
 .main {
     flex-grow: 1;
-    display: grid;
-    grid-template-columns: minmax(1fr, 25rem), 3fr;
-    grid-template-areas: "sidebar todoDisplay todoDisplay todoDisplay";
+    display: flex;
 }
