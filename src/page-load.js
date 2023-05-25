@@ -13,21 +13,25 @@ const mainElement = () => {
 
     const inbox = document.createElement("button");
     const projects = document.createElement("div");
+    const addProjectBtn = document.createElement("button");
 
     main.classList.add("main");
     sidebar.classList.add("sidebar");
     todoDisplay.classList.add("todoDisplay");
     inbox.classList.add("inbox");
     projects.classList.add("projects");
+    addProjectBtn.classList.add("add-project-btn");
 
     inbox.textContent = "Inbox";
     projects.textContent = "Projects";
+    addProjectBtn.textContent = "+ Add Project";
 
     main.appendChild(sidebar);
     main.appendChild(todoDisplay);
     
     sidebar.appendChild(inbox);
     sidebar.appendChild(projects);
+    sidebar.appendChild(addProjectBtn)
 
     return main;
 }

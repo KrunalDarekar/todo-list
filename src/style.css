@@ -43,7 +43,7 @@ footer {
     padding: 1rem;
 }
 
-.sidebar > .inbox {
+.sidebar > .inbox, .sidebar > .add-project-btn {
     padding: 0.2rem 1rem;
     align-self: stretch;
     border: 1px solid #C3ACD0;
@@ -51,10 +51,10 @@ footer {
     background-color: #F7EFE5;
     color: #674188;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
-.sidebar > .inbox:hover {
+.sidebar > .inbox:hover, .sidebar > .add-project-btn:hover {
     background-color: #FFFBF5;
     cursor: pointer;
 }
