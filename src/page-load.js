@@ -1,3 +1,5 @@
+import { newModal } from "./modal";
+
 const headerElement = () => {
     const header = document.createElement("header");
     header.classList.add("header");
@@ -43,9 +45,24 @@ const footerElement = () => {
 
     return footer;
 }
+const addProjectModalElement = () => {
+    const addProjectModal = newModal();
+    addProjectModal.classList.add("add-project-modal");
+    const modal = document.querySelector(".add-project-modal > .modal");
+    modal.classList.add("add-project");
+    const overlay = document.querySelector(".add-project-modal > .overlay");
+    overlay.classList.add("add-project");
+    const projectNameInput = document.createElement("input");
+    projectNameInput.setAttribute("type", "text");
+    projectNameInput.setAttribute("id", "project-name");
+    projectNameInput.setAttribute("placeholder", "Project Name");
+
+    return addProjectModal;
+}
 
 export {
     headerElement,
     mainElement,
-    footerElement
+    footerElement,
+    addProjectModalElement
 }
